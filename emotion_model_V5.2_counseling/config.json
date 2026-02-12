@@ -1,0 +1,68 @@
+{
+  "architectures": [
+    "XLMRobertaForSequenceClassification"
+  ],
+  "model_type": "xlm-roberta",
+  "num_labels": 7,
+  "id2label": {
+    "0": "sadness",
+    "1": "joy",
+    "2": "love",
+    "3": "anger",
+    "4": "fear",
+    "5": "surprise",
+    "6": "neutral"
+  },
+  "label2id": {
+    "sadness": 0,
+    "joy": 1,
+    "love": 2,
+    "anger": 3,
+    "fear": 4,
+    "surprise": 5,
+    "neutral": 6
+  },
+  "attention_probs_dropout_prob": 0.25,
+  "hidden_dropout_prob": 0.25,
+  "hidden_size": 768,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 514,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 1,
+  "vocab_size": 250002,
+  "pad_token_id": 1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "model_name": "xlm-roberta-base",
+  "version": "V5.2_COUNSELING",
+  "label_map": {
+    "sadness": 0,
+    "joy": 1,
+    "love": 2,
+    "anger": 3,
+    "fear": 4,
+    "surprise": 5,
+    "neutral": 6
+  },
+  "total_samples": 70000,
+  "focus": "Real conversations, text only, counseling context",
+  "eval_results": {
+    "eval_loss": 0.06896817684173584,
+    "eval_accuracy": 0.978,
+    "eval_f1_weighted": 0.978011171248514,
+    "eval_f1_macro": 0.9780111712485139,
+    "eval_uncertain_pct": 0.002285714285714286,
+    "eval_acc_sadness": 0.9713333333333334,
+    "eval_acc_joy": 0.9426666666666667,
+    "eval_acc_love": 0.9973333333333333,
+    "eval_acc_anger": 0.968,
+    "eval_acc_fear": 0.9793333333333333,
+    "eval_acc_surprise": 0.9873333333333333,
+    "eval_acc_neutral": 1.0,
+    "eval_runtime": 6.8241,
+    "eval_samples_per_second": 1538.667,
+    "eval_steps_per_second": 48.212,
+    "epoch": 6.0
+  }
+}
